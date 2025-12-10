@@ -22,3 +22,21 @@ typedef struct binary_tree_s
     struct binary_tree_s *right;
 } binary_tree_t;
 
+--------------
+
+
+Description of binary_tree_insert_left Function
+
+The binary_tree_insert_left function inserts a new node as the left child of a given parent node in a binary tree.
+
+Behavior:
+
+If the parent node is NULL, the function returns NULL.
+
+A new node is created with the given value.
+
+If the parent already has a left child, the new node takes its place, and the old left child becomes the left child of the new node.
+
+The function returns a pointer to the newly created node.
+
+This function allows dynamically building or modifying binary trees while maintaining proper parent-child relationships.

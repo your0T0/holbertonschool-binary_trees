@@ -91,4 +91,17 @@ Purpose:
 This function completely frees a binary tree to avoid memory leaks and is often used at the end of programs that dynamically create binary trees.
 
 
+--------------
+
+
+The function binary_tree_is_leaf checks whether a given binary tree node is a leaf.
+A node is considered a leaf if it has no left child and no right child.
+
+Returns 1 if the node is a leaf.
+
+Returns 0 if the node is not a leaf or if node is NULL.
+
+This function is commonly used to identify terminal nodes in tree algorithms such as counting leaves, tree traversal, or deletion.
+
+
 

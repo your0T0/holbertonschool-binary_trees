@@ -62,3 +62,33 @@ The function returns a pointer to the newly created node.
 This function allows dynamically building or modifying binary trees while keeping proper parent-child relationships intact.
 
 
+
+--------------
+
+
+Description -  binary_tree_delete
+
+The function binary_tree_delete is responsible for deleting an entire binary tree and freeing all allocated memory associated with it.
+It uses a post-order traversal approach, meaning it deletes the left subtree first, then the right subtree, and finally frees the current node.
+
+How it works:
+
+If the input pointer tree is NULL, the function does nothing.
+
+Recursively calls itself on the left child.
+
+Recursively calls itself on the right child.
+
+Frees the current node from memory.
+
+Why post-order traversal?
+
+Post-order is used because a node must only be deleted after its children have been deleted.
+This ensures safe memory deallocation without leaving dangling pointers.
+
+Purpose:
+
+This function completely frees a binary tree to avoid memory leaks and is often used at the end of programs that dynamically create binary trees.
+
+
+

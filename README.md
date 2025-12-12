@@ -107,8 +107,19 @@ The binary_tree_inorder function performs an in-order traversal on a binary tree
 This traversal visits nodes in the following order:
 
 Left subtree
-
 Current node -  passed to the function func
 Right subtree
 If either tree or func is NULL, the function does nothing.
 In-order traversal is commonly used to retrieve values from a Binary Search Tree (BST) in sorted ascending order.
+
+
+--------------
+
+
+The binary_tree_postorder function traverses a binary tree using the post-order method:
+
+Visit the left subtree
+Visit the right subtree
+Process the current node using the function pointer func
+If either tree or func is NULL, the function does nothing.
+Post-order traversal is commonly used for operations where children should be processed before their parent, such as freeing or deleting a tree structure.

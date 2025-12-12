@@ -105,3 +105,14 @@ This function is commonly used to identify terminal nodes in tree algorithms suc
 
 
 
+--------------
+
+
+The function binary_tree_is_root determines whether a given node is the root of a binary tree.
+A node is considered a root if it has no parent.
+
+Returns 1 if the node is a root.
+
+Returns 0 if it is not a root or if node is NULL.
+
+This function is useful in verifying tree structure, validating inputs, and identifying top-level nodes during traversal or manipulation.

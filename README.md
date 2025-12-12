@@ -123,3 +123,15 @@ Visit the right subtree
 Process the current node using the function pointer func
 If either tree or func is NULL, the function does nothing.
 Post-order traversal is commonly used for operations where children should be processed before their parent, such as freeing or deleting a tree structure.
+
+
+--------------
+
+
+The function binary_tree_height computes the height of a binary tree using recursion.
+The height is defined as the number of edges on the longest path from the given node
+down to a leaf node.
+If the node is NULL, the function returns 0.
+A leaf node has height 0.
+For each node, the function calculates the height of the left subtree and the right
+

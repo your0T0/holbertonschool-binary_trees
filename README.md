@@ -98,3 +98,17 @@ Traverse the left subtree
 Traverse the right subtree
 If either tree or func is NULL, the function does nothing.
 This traversal is useful when copying trees, evaluating expressions, or when the root must be processed before its children.
+
+
+--------------
+
+
+The binary_tree_inorder function performs an in-order traversal on a binary tree.
+This traversal visits nodes in the following order:
+
+Left subtree
+
+Current node -  passed to the function func
+Right subtree
+If either tree or func is NULL, the function does nothing.
+In-order traversal is commonly used to retrieve values from a Binary Search Tree (BST) in sorted ascending order.

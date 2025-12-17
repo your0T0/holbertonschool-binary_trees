@@ -135,3 +135,158 @@ If the node is NULL, the function returns 0.
 A leaf node has height 0.
 For each node, the function calculates the height of the left subtree and the right
 
+-----------------------------------------------
+
+Description of binary_tree_depth Function
+
+The binary_tree_depth function measures the depth of a node in a binary tree.
+The depth is defined as the number of edges from the node to the root of the tree.
+
+Behavior:
+If the given node is NULL, the function returns 0.
+The function traverses upward through the parent pointers until it reaches the root.
+Each step increases the depth counter.
+
+Purpose:
+This function is useful for understanding the position of a node within a tree
+and is commonly used in balance calculations and tree analysis.
+
+⸻
+
+--------------------------------------------
+
+Description of binary_tree_size Function
+
+The binary_tree_size function calculates the total number of nodes in a binary tree.
+
+Behavior:
+If the tree is NULL, the function returns 0.
+The function recursively counts the current node, the left subtree,
+and the right subtree.
+
+Purpose:
+This function helps determine the size of a tree or any subtree
+and is useful for memory analysis and validation of tree structures.
+
+⸻
+
+------------------------------------------
+
+Description of binary_tree_leaves Function
+
+The binary_tree_leaves function counts the number of leaf nodes in a binary tree.
+A leaf is defined as a node with no left or right children.
+
+Behavior:
+If the tree is NULL, the function returns 0.
+If a node has no children, it is counted as a leaf.
+
+Purpose:
+This function is commonly used to analyze tree structure
+and to identify terminal nodes.
+
+⸻
+----------------------------------------------
+
+Description of binary_tree_nodes Function
+
+The binary_tree_nodes function counts the number of nodes
+that have at least one child in a binary tree.
+
+Behavior:
+If the tree is NULL, the function returns 0.
+Nodes that have at least one left or right child are counted.
+
+Purpose:
+This function helps differentiate internal nodes from leaves
+and is useful for tree structure analysis.
+
+⸻
+
+----------------------------------------
+
+Description of binary_tree_balance Function
+
+The binary_tree_balance function calculates the balance factor of a binary tree.
+The balance factor is defined as the difference between the height of the left
+subtree and the height of the right subtree.
+
+Behavior:
+If the tree is NULL, the function returns 0.
+The function computes the height of both subtrees and returns their difference.
+
+Purpose:
+This function is essential for determining whether a tree is balanced
+and is commonly used in self-balancing trees such as AVL trees.
+
+⸻
+
+-----------------------------------------------
+
+Description of binary_tree_is_full Function
+
+The binary_tree_is_full function checks whether a binary tree is full.
+A full binary tree is a tree where every node has either
+zero or two children.
+
+Behavior:
+If the tree is NULL, the function returns 0.
+If any node has only one child, the function returns 0.
+If all nodes satisfy the full tree condition, the function returns 1.
+
+Purpose:
+This function is used to validate tree completeness rules
+and structural correctness.
+
+-------------------------------------------------
+
+Description of binary_tree_is_perfect Function
+
+The binary_tree_is_perfect function checks whether a binary tree is perfect.
+A perfect binary tree is a tree where all internal nodes have two children
+and all leaves are at the same level.
+
+Behavior:
+If the tree is NULL, the function returns 0.
+The function verifies that all leaves have the same depth
+and that every internal node has exactly two children.
+
+Purpose:
+This function is useful for validating strict tree properties
+and understanding tree symmetry.
+
+⸻
+
+--------------------------------------------
+
+Description of binary_tree_sibling Function
+
+The binary_tree_sibling function finds the sibling of a given node.
+A sibling is defined as a node that shares the same parent.
+
+Behavior:
+If the node is NULL or has no parent, the function returns NULL.
+If the node has a sibling, a pointer to that sibling is returned.
+If no sibling exists, the function returns NULL.
+
+Purpose:
+This function helps navigate tree relationships
+and is useful in tree traversal and structural analysis.
+
+⸻
+
+-------------------------------------------
+
+Description of binary_tree_uncle Function
+
+The binary_tree_uncle function finds the uncle of a given node.
+The uncle is defined as the sibling of the node’s parent.
+
+Behavior:
+If the node is NULL, has no parent, or has no grandparent,
+the function returns NULL.
+If an uncle exists, the function returns a pointer to the uncle node.
+
+Purpose:
+This function is useful for analyzing extended family relationships
+within a binary tree and is commonly used in advanced tree algorithms
